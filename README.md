@@ -15,13 +15,13 @@ NeoMovie is a premium, full-stack responsive movie exploration platform. It allo
 
 ## 📸 Screenshots
 
-|                               Home Page                                |                                 Movie Details                                 |
-| :--------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| ![Home](https://via.placeholder.com/600x400?text=Home+Page+Screenshot) | ![Details](https://via.placeholder.com/600x400?text=Movie+Details+Screenshot) |
+|                  Home Page                  |                   Movie Details                   |
+| :-----------------------------------------: | :-----------------------------------------------: |
+| ![Home](client/public/screenshots/home.png) | ![Details](client/public/screenshots/details.png) |
 
-|                            Search Results                             |                                Actor Profile                                |
-| :-------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
-| ![Search](https://via.placeholder.com/600x400?text=Search+Screenshot) | ![Actor](https://via.placeholder.com/600x400?text=Actor+Profile+Screenshot) |
+|                      Favorites                       |
+| :--------------------------------------------------: |
+| ![Favorites](client/public/screenshots/favorite.png) |
 
 ## 🛠 Tech Stack
 
