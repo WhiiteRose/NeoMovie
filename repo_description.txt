@@ -1,5 +1,0 @@
-NeoMovie: A premium full-stack responsive movie explorer built with React, Node.js, and MongoDB. Discover the latest films, series, and actors with a modern UI. Containerized with Docker.
-
-Topics/Tags:
-react, nodejs, mongodb, express, fullstack, docker, movie-app, material-ui, javascript, web-development, api, responsive-design, cinemaphile, portfolio
-
