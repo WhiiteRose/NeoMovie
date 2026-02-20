@@ -1,103 +1,96 @@
-import HomePage from "../pages/HomePage";
-import PersonDetail from "../pages/PersonDetail";
-import FavoriteList from "../pages/FavoriteList";
-import MediaDetail from "../pages/MediaDetail";
-import MediaList from "../pages/MediaList";
-import MediaSearch from "../pages/MediaSearch";
-import PasswordUpdate from "../pages/PasswordUpdate";
-import ReviewList from "../pages/ReviewList";
-import ProtectedPage from "../components/common/ProtectedPage";
-import PresentationPage from "../pages/PresentationPage";
-import ViewList from "../pages/ViewList";
-import PlaylistList from "../pages/PlaylistList";
+import HomePage from '../pages/HomePage';
+import PersonDetail from '../pages/PersonDetail';
+import FavoriteList from '../pages/FavoriteList';
+import MediaDetail from '../pages/MediaDetail';
+import MediaList from '../pages/MediaList';
+import MediaSearch from '../pages/MediaSearch';
+import PasswordUpdate from '../pages/PasswordUpdate';
+import ReviewList from '../pages/ReviewList';
+import ProtectedPage from '../components/common/ProtectedPage';
+import ViewList from '../pages/ViewList';
+import PlaylistList from '../pages/PlaylistList';
 
 export const routesGen = {
-  home: "/",
-  PresentationPage: "/presentation",
+  home: '/',
   mediaList: (type) => `/${type}`,
   mediaDetail: (type, id) => `/${type}/${id}`,
-  mediaSearch: "/search",
+  mediaSearch: '/search',
   person: (id) => `/person/${id}`,
-  favoriteList: "/favorites",
-  reviewList: "/reviews",
-  passwordUpdate: "password-update"
+  favoriteList: '/favorites',
+  reviewList: '/reviews',
+  passwordUpdate: 'password-update',
 };
 
 const routes = [
   {
     index: true,
     element: <HomePage />,
-    state: "home"
+    state: 'home',
   },
+
   {
-    path: "/presentation",
-    element: <PresentationPage />,
-    state: "presentation"
-  },
-  
-  {
-    path: "/person/:personId",
+    path: '/person/:personId',
     element: <PersonDetail />,
-    state: "person.detail"
+    state: 'person.detail',
   },
   {
-    path: "/search",
+    path: '/search',
     element: <MediaSearch />,
-    state: "search"
+    state: 'search',
   },
   {
-    path: "/password-update",
+    path: '/password-update',
     element: (
       <ProtectedPage>
         <PasswordUpdate />
       </ProtectedPage>
     ),
-    state: "password.update"
+    state: 'password.update',
   },
   {
-    path: "/favorites",
+    path: '/favorites',
     element: (
       <ProtectedPage>
         <FavoriteList />
       </ProtectedPage>
     ),
-    state: "favorites"
+    state: 'favorites',
   },
   {
-    path: "/views",
+    path: '/views',
     element: (
       <ProtectedPage>
         <ViewList />
       </ProtectedPage>
     ),
-    state: "views"
+    state: 'views',
   },
   {
-    path: "/playlists",
+    path: '/playlists',
     element: (
       <ProtectedPage>
         <PlaylistList />
       </ProtectedPage>
     ),
-    state: "playlists"
+    state: 'playlists',
   },
   {
-    path: "/reviews",
+    path: '/reviews',
     element: (
       <ProtectedPage>
         <ReviewList />
       </ProtectedPage>
     ),
-    state: "reviews"
+    state: 'reviews',
   },
   {
-    path: "/:mediaType",
-    element: <MediaList />
+    path: '/:mediaType',
+    element: <MediaList />,
   },
   {
-    path: "/:mediaType/:mediaId",
-    element: <MediaDetail />
-  }
+    path: '/:mediaType/:mediaId',
+    element: <MediaDetail />,
+  },
 ];
 
 export default routes;
